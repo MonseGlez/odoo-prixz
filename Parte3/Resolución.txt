@@ -1,0 +1,15 @@
+1. Picking (selección de productos).
+-Establecería reglas de reabastecimiento  configuraría las rutas para que el flujo de productos sea automático en el almacén
+ estando vinculado a los movimientos de inventario.
+- Utilizaría el barcode para optimizar el proceso del Picking.
+
+2. Packing (empaquetado).
+ - Se podría definir  una ubicación interna llamada "Packing" para que se ejecuten los trasladados necesarios automaticamente después de ser seleccionados.
+ -Usaría la funcionalidad nativa de empaquetado de Odoo (stock.picking.package) para agrupar los productos en paquetes. 
+ Al crear un paquete, se registraría qué productos están en qué paquetes, mejorando la trazabilidad.
+
+3. Envío con Integración con un Sistema de Paquetería (DHL o FedEx)
+ -Configuraría las reglas de entrega en el módulo de inventario y ventas de Odoo para definir métodos de entrega.
+ se podría añadir métodos de entrega para diferentes transportes, e  incluso consultar el estado de envio con ayuda de sus API si es que cuentan con ella.
+
+ 
